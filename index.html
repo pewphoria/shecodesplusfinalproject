@@ -15,16 +15,13 @@
 <body>
   <div class="weather-app">
   <div class="container">
-    <h1>
-      USA
-    </h1>
+    <span class="axios"></span>
+    <h1 id="city"></h1>
     <ul>
       <li>
         Friday 05:00
       </li>
-      <li>
-        Clear
-      </li>
+      <li id="description"></li>
     </ul>
     <div class="row">
       <div class="col-6">
@@ -39,13 +36,10 @@
       <div class="col-6">
         <ul>
           <li>
-            Precipitation: 19%
+            Humidity: <span id="humidity"></span>%
           </li>
           <li>
-            Humidity: 100%
-          </li>
-          <li>
-            Wind: 12 mph
+            Wind: <span id="wind"></span>Km/H
           </li>
         </ul>
       </div>
