@@ -1,3 +1,7 @@
+function formatDate(timestamp) {
+// calculate the date
+return "Friday 5:00";
+}
 function displayTemperature(response) {
 let temperatureElement = document.querySelector("#temperature");
 let cityElement = document.querySelector("#city");
@@ -10,6 +14,7 @@ humidityElement.innerHTML = (response.data.main.humidity);
 descriptionElement.innerHTML = (response.data.weather[0].description);
 cityElement.innerHTML = (response.data.name);
 temperatureElement.innerHTML = Math.round(response.data.temp);
+dateElement.innerHTML = formatDate(response.data.dt * 1000);
 }
 
 let apiKey = "f1ee79c9eeb6035ca48c765eafeb744e";
