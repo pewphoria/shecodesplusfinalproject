@@ -37,7 +37,8 @@ descriptionElement.innerHTML = (response.data.weather[0].description);
 cityElement.innerHTML = (response.data.name);
 temperatureElement.innerHTML = Math.round(response.data.temp);
 dateElement.innerHTML = formatDate(response.data.dt * 1000);
-iconElement.setAttribute("src", 'http://openweathermap.org/img/wn/10d@2x.png');
+iconElement.setAttribute("src", 'http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png');
+iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 let city = "New York";
 let apiKey = "f1ee79c9eeb6035ca48c765eafeb744e";
