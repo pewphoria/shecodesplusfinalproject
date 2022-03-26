@@ -28,12 +28,15 @@ let descriptionElement = document.querySelector("#description");
 let humidityElement = document.querySelector("#humidity");
 let windElement = document.querySelector("#wind");
 let dateElement = document.querySelector("#date");
+let iconElement = document.querySelector("#icon");
+
 windElement.innerHTML = Math.round(response.data.wind.speed);
 humidityElement.innerHTML = (response.data.main.humidity);
 descriptionElement.innerHTML = (response.data.weather[0].description);
 cityElement.innerHTML = (response.data.name);
 temperatureElement.innerHTML = Math.round(response.data.temp);
 dateElement.innerHTML = formatDate(response.data.dt * 1000);
+iconElement.setAttribute("src", 'http://openweathermap.org/img/wn/10d@2x.png');
 }
 let city = "New York";
 let apiKey = "f1ee79c9eeb6035ca48c765eafeb744e";
