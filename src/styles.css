@@ -84,10 +84,17 @@ li:first-letter {
   opacity: 0.5;
 }
 
-.weather-forecast-temperature-min {
+.weather-forecast-temperatures-max {
   opacity: 0.5;
+  color: #000;
+}
+
+.weather-forecast-temperatures-min {
+  opacity: 0.5;
+  color: #000;
 }
 
 .weather-forecast-temperatures {
+  color: #000;
   font-size: 13px;
 }
